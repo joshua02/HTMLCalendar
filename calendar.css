@@ -1,0 +1,124 @@
+.Calendar {
+    width: 20%;
+    height: 30%;
+    border: 1px solid black;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.CalendarHeader{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content:left;
+}
+
+
+.CalendarRightButton, .CalendarLeftButton {
+    flex: 1;
+    
+    border-radius: 0px;
+    background-color: #F2B9AC;
+    border: 1px solid black;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.CalendarRightButton {
+    order: 10;
+}
+
+.CalendarLeftButton {
+    order: -10;
+}
+
+.CalendarHeaderDate {
+    flex: 8;
+    border-radius: 0px;
+    background-color: #F2B9AC;
+    border: 1px solid black;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.CalendarInputButton {
+    border-radius: 0px;
+    background-color: #F2B9AC;
+    border: 1px solid black;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.CalendarBody {
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.CalendarDay {
+    flex: 1 0 14%;
+    height: 40px;
+    border-radius: 0px;
+    background-color: #FFF8F6;
+    border: 1px solid #E2DCDB;
+    font-family: "Roboto", Times, serif;
+}
+
+.CalendarDay:hover, 
+.CalendarRightButton:hover, 
+.CalendarLeftButton:hover, 
+.CalendarInputButton:hover {
+    background-color: #F5775A;
+}
+
+.CalendarDaysHeader {
+    display: flex;
+    height: 20px;
+    cursor: pointer;
+    
+}
+
+.CalendarDayHeader {
+    flex: 1;
+    text-align: center;
+    border: 1px solid black;
+    cursor:default;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #F2C9C9;
+    border: 1px solid #E2DCDB
+}
+
+.CalendarInputField {
+    flex: 1;
+    width: 33%;
+}
+
+.CalendarInputDate {
+    display: flex;
+    width: 100%;
+    flex: 5;
+}
+
+
+.CalendarDaySelected {
+    background-color:#27536B;
+}
+
+
+.CalendarDay,
+.CalendarHeaderDate,
+.CalendarLeftButton,
+.CalendarRightButton,
+.CalendarInputButton {
+    cursor: pointer;
+}
+
+
+/* Color Pallete*/
+.Calendar-2-1-hex { color: #F8955F; }
+.Calendar-2-2-hex { color: #F5775A; }
+.Calendar-2-3-hex { color: #27536B; }
+.Calendar-2-4-hex { color: #27737B; }
+.Calendar-2-5-hex { color: #F1E3C9; }
